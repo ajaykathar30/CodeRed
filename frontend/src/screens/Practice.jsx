@@ -15,10 +15,18 @@ const Practice = () => {
       <Navbar/>
       {
        (!questions || questions.length === 0)?(
-        <h1 className='mx-[10%] text-2xl'>Fetching Questions ...</h1>
-       ):
+        <div className="flex flex-col items-center justify-center mt-10 text-center">
+    <div className="w-12 h-12 border-4 border-blue-500 border-dashed rounded-full animate-spin" style={{animationDuration:"2s"}}></div>
+    <h1 className="text-2xl font-semibold mt-6 text-gray-700">
+      Fetching Questions...
+    </h1>
+    <p className="text-gray-500 mt-2">
+      Hang tight, this might take a little while 🚀
+    </p>
+  </div> 
+      ):
        (
-          <div className='flex mx-auto my-10 flex-col gap-5 max-w-5xl'>
+         <div className='flex mx-auto my-10 flex-col gap-5 max-w-5xl'>
         <div>
             <h1 className='font-bold text-2xl'>Hand Picked Questions for Practise </h1>
         </div>
@@ -37,8 +45,12 @@ const Practice = () => {
         }
       
         </div>
+       
        )
       }
+      
+ 
+
     
         <Footer/>
     </div>

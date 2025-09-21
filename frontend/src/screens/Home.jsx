@@ -13,7 +13,7 @@ const Home = () => {
       <div
         className="hero min-h-screen"
         style={{
-          backgroundImage: "url(/heroPagebg.jpg)",
+          backgroundImage: "url(/heroPagebg.webp)",
           backgroundSize: "cover",
           backgroundPosition: "center"
         }}
